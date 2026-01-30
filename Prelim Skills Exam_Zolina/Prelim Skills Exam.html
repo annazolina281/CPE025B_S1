@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prelim Skills Exam</title>
+</head>
+<body>
+    <body bgcolor="#f0f8ff"></body>
+    <header>
+        <center>    
+            <h1 id="title">Top Performing OPM Bands</h1>
+            <p>This is a survey for all the current top performing OPM bands today!</p>
+            <p>Share your favorite OPM band and concert experiences!</p>
+            <br><br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwuafxBKE6A9UV_0LFLWx3d_XILyQpWx_Yw&s"
+            alt="Parokya ni Edgar Band" width="400" height="300">
+            <img src="https://images.summitmedia-digital.com/spotph/images/2021/06/08/eraserheads-song-meanings-640-1623156462.jpg" 
+            alt="Eraserheads Band" width="400" height="300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqk8s3l5vPoMkL9WG9QhiPHykZwlWqSmv5A&s" 
+            alt="Rivermaya Band" width="400" height="300">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicAVLNhl5bHqLyZV8f3CIqZaTtmoQrJd7ousymoKyTbZxrixMHLlSq4cWuOQsPrFpLKZiINt1kIBgz0dUbGBEGoso0nW3YNQGWPcyqr611cjocRbIXek24ja1WAMdRlupSnYn-FeQEm64Y/w1200-h630-p-k-no-nu/Kamikazee+51.jpg"
+            alt="Kamikazee Band" width="400" height="300">
+            <img src="https://contents.pep.ph/images2/images2/2023/06/24/silent-main-1687599133.jpg"
+            alt="Silent Sanctuary Band" width="400" height="300">
+            <img src="https://www.nme.com/wp-content/uploads/2022/12/sponge-cola@2000x1270.jpg"
+            alt="Sponge Cola Band" width="400" height="300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9IqmoGipY_SexSSFnB-R14pH9w1fZzhy5iA&s"
+            alt="December Avenue Band" width="400" height="300">
+            <img src="https://media.philstar.com/photos/2025/08/04/3-1_2025-08-04_19-01-56.jpg"
+            alt="Cup of Joe Band" width="400" height="300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5AUuwHQTDjDWjtsJU5y83RxYBDg3KKKQBQQ&s"
+            alt="UP Dharma Down Band" width="400" height="300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNCd5yJqm7D1jii0Q9dfkNJU_kZae8N51rSw&s"
+            alt="IV OF Spades Band" width="400" height="300">
+            <img src="https://images.esquiremag.ph/dynsto/1768967321-fitterkarma.jpg"
+            alt="Fitterkarma Band" width="400" height="300">
+            <img src="https://entertainment.inquirer.net/files/2022/06/Callalily-e1656125349517.jpeg"
+            alt="Callalily Band" width="400" height="300">
+        </center>
+
+        <p id="description">Tell us about your favorite OPM band!</p>
+    </header>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" min="13" max="100" placeholder="Enter your age (13-100)" required>
+        <br><br>
+        
+        <label for="dropdown">Select your favorite OPM band:</label>
+        <select id="dropdown" name="bands" required>
+            <option value="">Choose the band that you like the most</option>
+            <option value="parokya">Parokya ni Edgar</option>
+            <option value="Eheads">Eraserheads</option>
+            <option value="rivermaya">Rivermaya</option>
+            <option value="Kamikazee">Kamikazee</option>
+            <option value="silent">Silent Sanctuary</option>
+            <option value="sponge">Sponge Cola</option>
+            <option value="DecAve">December Avenue</option>
+            <option value="Coj">Cup of Joe</option>
+            <option value="UDD">Up Dharma Down</option> 
+            <option value="ivos">IV OF Spades</option>
+            <option value="fitterkarma">Fitterkarma</option>
+            <option value="callalily">Callalily</option>
+
+        </select>
+        <br><br>
+        
+        <label>Do you attend live concerts?</label>
+        <label><input type="radio" name="concerts" value="yes" required> Yes</label>
+        <label><input type="radio" name="concerts" value="no"> No</label>
+        <br><br>
+        
+        <label>Select your favorite genres (select all that apply):</label>
+        <label><input type="checkbox" name="genres" value="rock"> Rock</label>
+        <label><input type="checkbox" name="genres" value="pop"> Pop</label>
+        <label><input type="checkbox" name="genres" value="alternative"> Alternative</label>
+        <label><input type="checkbox" name="genres" value="punk"> Punk</label>
+        <br><br>
+        
+        <label for="comments">Additional comments:</label>
+        <br>
+        <textarea id="comments" name="comments" placeholder="Tell us more about your favorite band..." rows="3"></textarea>
+        <br><br>
+
+            <button id="submit" type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
