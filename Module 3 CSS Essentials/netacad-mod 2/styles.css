@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.header {
+  height: 250px;
+  background-color: #222; /* fallback color */
+  background-image: url("https://th.bing.com/th/id/OIP.yKbN8lopbbbj9MYjWobKhQHaEJ?w=323&h=181&c=7&r=0&o=7&pid=1.7&rm=3");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: red;
+
+}
+ul {
+  list-style-type: square; /* Changes bullets to squares */
+    list-style-image: url('https://edube.org/uploads/media/default/0001/04/oedg_icon_regular.png');
+}
+a:link {
+  text-decoration: none; /* Remove underline */
+  color: pink;
+
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+img {
+  max-width: 100%;
+  max-height: 80%;
+}

@@ -1,0 +1,76 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: slategray; /* fixed typo */
+}
+
+/* Header styles */
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    margin: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Element selector */
+h2 {
+    color: black;
+}
+
+/* Class selectors */
+.highlight {
+    background-color: rgb(25, 154, 85);
+    color: white;
+    padding: 4px;
+}
+
+/* Rainbow paragraph classes */
+.red    { color: rgb(227, 61, 61); }
+.orange { color: rgb(216, 123, 65); }
+.yellow { color: rgb(217, 209, 54); }
+.green  { color: rgb(110, 231, 108); }
+.cyan   { color: rgb(61, 227, 227); }
+.blue   { color: rgb(61, 61, 227); }
+
+/* ID selector */
+#header {
+    border-bottom: 2px solid orange;
+}
+
+/* Attribute selector */
+a[href^="mailto:"] {
+    color: rgb(109, 106, 99);
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: white;
+}
+
+/* Pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Combinator selector */
+header + main {
+    border-top: 1px solid gray;
+}
+
+/* H1 style */
+header h1 {
+    color: blue;
+    font-size: 24px;
+}

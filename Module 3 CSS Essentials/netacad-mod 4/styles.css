@@ -1,0 +1,62 @@
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+div {
+    float: left;
+}
+.column {
+    float: left; /* or right, depending on desired direction */
+    width: 33.33%; /* Assuming three equal-width columns, adjust as needed */
+    /* Add padding, margins, borders as needed */
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    overflow: hidden; /* Clearing floats */
+}
+
+.grid-item {
+    float: left; /* Float items to align side by side */
+    width: 50%; /* 2 columns, hence 50% width */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item {
+        width: 100%; /* Stack items vertically on smaller screens */
+    }
+}
+.testimonial-section {
+    overflow: hidden; /* Clear the floats */
+}
+
+.testimonial {
+    float: left;
+    width: 33.333%; /* 3 testimonials per row */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    font-weight: normal;
+    text-align: right;
+    margin-top: 10px;
+}
