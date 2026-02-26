@@ -1,0 +1,75 @@
+
+
+/* styles.scss */
+
+$primary-color: #007bff;
+$font-size: 16px;
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+// Base styles
+body {
+  font-family: Arial, sans-serif;
+  font-size: $font-size;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Header and Footer styles
+.header, .footer {
+  background-color: color.adjust($primary-color, $lightness: 40%);
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1, .footer p {
+  font-size: 2em;
+}
+
+// Main content styles
+main {
+  padding: 20px;
+
+  .about {
+    h2 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: $font-size;
+    }
+  }
+
+  .features {
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .feature-list {
+      list-style-type: disc;
+      padding-left: 20px;
+
+      li {
+        @include rounded-corners(5px);
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: color.adjust($primary-color, $lightness: 40%);
+      }
+    }
+  }
+
+  .example {
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .example-text {
+      @include rounded-corners(10px);
+      padding: 10px;
+      background-color: color.adjust($primary-color, $lightness: 40%);
+    }
+  }
+}

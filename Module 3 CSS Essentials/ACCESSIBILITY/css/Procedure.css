@@ -1,0 +1,71 @@
+/* styles.css */
+
+.navigation-menu {
+  list-style: none; /* Removes the default list style */
+  padding: 0; /* Removes the default padding */
+}
+
+.navigation-menu li {
+  display: inline; /* Displays the list items inline */
+  margin-right: 20px; /* Adds spacing between the list items */
+}
+
+.navigation-menu a {
+  text-decoration: none; /* Removes the default underline from links */
+  color: #0654b3; /* Sets the text color for the links */
+}
+
+.navigation-menu a:hover {
+  text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+a {
+  color: #0654b3; /* Link color */
+  text-decoration: underline; /* Underline links for clear identification */
+}
+
+a:hover,
+a:focus {
+  color: #002766; /* Darker color on hover/focus for better interaction visibility */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  flex: 1;
+  order: 1; /* Sidebar comes first */
+}
+
+.main-content {
+  flex: 2;
+  order: 2; /* Main content follows */
+}
+
+body {
+  color: #333; /* Dark gray text for better readability */
+  background-color: #f4f4f4; /* Light gray background to reduce glare */
+  font-size: 16px; /* Standard font size for readability */
+}
+
+.large-text {
+  font-size: 20px; /* Larger font size for better visibility */
+}
+
+.high-contrast-text {
+  color: #000; /* Black text */
+  background-color: #fff; /* White background */
+}
+
+.screen-reader-text {
+  position: absolute; /* Position it out of the flow of the document */
+  width: 1px;
+  height: 1px; /* Minimize its size */
+  margin: -1px; /* Place it out of the viewport */
+  padding: 0; /* Remove padding */
+  overflow: hidden; /* Hide any content that overflows its box */
+  clip: rect(0, 0, 0, 0); /* Clip the content to a 0 rectangle */
+  border: 0; /* Remove borders */
+}

@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fffbe6;
+}
+
+.header, .footer {
+  background-color: rgb(238.0680851064, 199.7872340426, 98.9319148936);
+  padding: 20px;
+  text-align: center;
+}
+.header h1, .header p, .footer h1, .footer p {
+  margin: 0;
+  font-size: 2em;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+main .about h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+main .about p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+main .features h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+main .features .feature-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+main .features .feature-list li {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(248.0510638298, 232.3404255319, 190.9489361702);
+  color: #333;
+}
+main .features .feature-list li h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+}
+main .features .feature-list li p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+main .features .feature-list li ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+main .features .feature-list li ul li {
+  margin-bottom: 5px;
+  font-size: 0.95em;
+}
+main .features .feature-list .cps {
+  background-color: rgb(233.0765957447, 183.5106382979, 52.9234042553);
+}
+main .features .feature-list .hci {
+  background-color: rgb(238.0680851064, 199.7872340426, 98.9319148936);
+}
+main .features .feature-list .ds {
+  background-color: rgb(243.0595744681, 216.0638297872, 144.9404255319);
+}
+main .features .feature-list .sysad {
+  background-color: rgb(248.0510638298, 232.3404255319, 190.9489361702);
+}
+main .example h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+main .example .example-text {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(243.0595744681, 216.0638297872, 144.9404255319);
+  color: #333;
+}
+
+.footer p {
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=SupplementaryActivity.css.map */

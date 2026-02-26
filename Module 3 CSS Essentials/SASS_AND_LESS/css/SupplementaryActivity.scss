@@ -1,0 +1,122 @@
+@use "sass:color";
+
+$primary-color: #d4a017; // Dark yellow / golden
+$font-size: 16px;
+$card-padding: 15px;
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+@mixin card-style($bg-color) {
+  background-color: $bg-color;
+  padding: $card-padding;
+  margin-bottom: 20px;
+  @include rounded-corners(8px);
+}
+
+// Base styles
+body {
+  font-family: Arial, sans-serif;
+  font-size: $font-size;
+  color: #333; // Dark text for readability
+  margin: 0;
+  padding: 0;
+  background-color: #fffbe6; // Soft light yellow background
+}
+
+// Header and Footer
+.header, .footer {
+  background-color: color.adjust($primary-color, $lightness: 20%);
+  padding: 20px;
+  text-align: center;
+
+  h1, p {
+    margin: 0;
+    font-size: 2em;
+    color: #fff; // White text for contrast
+  }
+}
+
+// Main content
+main {
+  padding: 20px;
+
+  .about {
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: $font-size;
+      margin-bottom: 20px;
+    }
+  }
+
+  .features {
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+
+      li {
+        @include rounded-corners(10px);
+        padding: $card-padding;
+        background-color: color.adjust($primary-color, $lightness: 40%);
+        color: #333; // Dark text inside cards
+
+        h3 {
+          margin-top: 0;
+          font-size: 1.3em;
+        }
+
+        p {
+          font-size: $font-size;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          list-style-type: square;
+          padding-left: 20px;
+
+          li {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+          }
+        }
+      }
+
+      // Elective-specific colors in golden shades
+      .cps { background-color: color.adjust($primary-color, $lightness: 10%); }
+      .hci { background-color: color.adjust($primary-color, $lightness: 20%); }
+      .ds { background-color: color.adjust($primary-color, $lightness: 30%); }
+      .sysad { background-color: color.adjust($primary-color, $lightness: 40%); }
+    }
+  }
+
+  .example {
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .example-text {
+      @include rounded-corners(10px);
+      padding: 15px;
+      background-color: color.adjust($primary-color, $lightness: 30%);
+      color: #333; // Dark text for readability
+    }
+  }
+}
+
+// Footer adjustments
+.footer p {
+  font-size: 1em;
+}

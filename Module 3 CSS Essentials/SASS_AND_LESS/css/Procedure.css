@@ -1,0 +1,51 @@
+body {
+  color: #007bff;
+  font-size: 16px;
+}
+
+.header,
+.footer {
+  background-color: rgb(102, 175.8, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-list li, .example-text {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(102, 175.8, 255);
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+.about h2 {
+  font-size: 1.5em;
+}
+.about p {
+  font-size: 16px;
+}
+
+.features h2 {
+  font-size: 1.5em;
+}
+.features .feature-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.features .feature-list li {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+.example h2 {
+  font-size: 1.5em;
+}
+.example .example-text {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
